@@ -1,0 +1,52 @@
+body{
+    background: 
+    url("../images/background.jpg")
+    no-repeat center fixed; 
+    /* -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover; */
+    background-size: cover;
+}
+h1{
+    text-align:center;
+    color:blue;
+    font-family: verdana;
+    font-size: 300%;
+    font-style:italic;
+    vertical-align: 50%;
+}
+pre{
+    border:2px solid rgb(142, 28, 165);
+    color:white;
+}
+label{
+    color:white;
+    font-size: 120%;
+    text-align:center;
+}
+p2{
+    color:white;
+
+    font-size: 120%;
+    text-align:center;
+}
+input{
+    
+    color:white;
+    background-color: rgba(0, 0, 0, 0.5)
+}
+#div1{
+    text-align:center;
+    
+}
+select{
+    color:white;
+    background-color: rgba(0, 0, 0, 0.5)
+}
+#i1{
+    width: 190px;
+}
+#download{
+    display: inline;
+    content: attr();
+}

@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="../css/styles.css"/>
+    <title>ASCII</title>
+</head>
+<body>
+    <div id="div1">
+        <h1 > Ascii-art-Web </h1>
+        
+        <form method="POST" action="/" id="f">
+            <p2>Please select font</p2>
+            <select name="fs">
+                <option value= {{.Font}}> Current : {{.Font }} </option>
+                <option value="Standard"> Standard </option>
+                <option value="Shadow"> Shadow </option>
+                <option value="Thinkertoy"> Thinkertoy </option>
+            </select>
+       
+            <br>   
+           
+        <label> Type text </label> 
+        <input type="text" name="Text" value= "{{.OldData}}" id="i1"/>
+       
+        <input type="submit" class="btn btn-success" value = "Go" id="i2"/>
+       
+    </form>
+
+        
+    </div>
+    <div class="container mt-3">
+    <pre>{{ .Data }}</pre>
+    <!-- <button type="submit" onclick="window.open('../files/output.txt')">Download!</button> -->
+    <a download href="Data:text/plain../files/output.txt"><button class="btn-success"> Download</button></a>
+    </div>
+</body>
+</html>
